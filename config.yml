@@ -1,0 +1,26 @@
+SpawnConfig:
+	SpawnNearOthers: true
+	#SpawnNearOthers is the configuration settings for how near a player should spawn to other
+		MinDist: 100
+		#MinDist is the minimum distance a player should spawn MinDist = closest possible spawn
+		MaxDist: 800
+		#MaxDist is the maximum distance to spawn a player from another
+		PlayerGroupCount: 3
+		#PlayerGroupCount is the minimum group of players to spawn a player near (Should target cities)
+		PlayerGroupRadius: 1000
+		#PlayerGroupRadius is the range of the PlayerGroupCount
+	ServerChoice: false
+	#ServerChoice is for mercury support to loadbalance new players to less full servers, false if not multiserver
+		MaxServerPlayers: 15
+		#MaxServerPlayers will not spawn a new player if that server already is full
+		ServerTPSThreshold: 15
+		#ServerTPSThreshold will now allow new players to spawn if the TPS is not above that level
+info:
+	debug: true
+	#give your console some action 
+	SpawnMessage: "You wake up in an unfamiliar place"
+	#message sent to player on spawn
+	log: true
+	#create a log of spawns and parameters (to ensure plugin is working)
+	MercurySeperator: \\|
+	#the mercury seperator to be used for regex on the mercury messages

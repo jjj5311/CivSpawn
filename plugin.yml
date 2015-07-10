@@ -1,0 +1,7 @@
+name: CivSpawn
+main: vg.civcraft.mc.CivSpawn.CivSpawn
+version: 1.0.0.1
+author: jjj5311
+softdepend: [Mercury, CivModCore]
+description: Plugin for spawning on mc.civcraft.co
+commands:
